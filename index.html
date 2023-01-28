@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reseter.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Низамутдинов Дамир Рависович 211-325 28 янв</title>
+    <title>Низамутдинов Дамир Рависович 211-325 28.01.23</title>
 </head>
 
 <body>
@@ -53,6 +53,29 @@
         </section>
         <section class="page-max-width">
             <h1>Задание 2</h1>
+            <div class="form">
+                <form action="//httpbin.org/post" name="contact" method="POST" data-netlify="true">
+                    <p class="form">
+                        <label>Телефон
+                            <input type="tel" placeholder="+X(XXX)XX-XX" name="number" required>
+                        </label>
+                    </p>
+                    <p class="form">
+                        <label>Имя файла<input type="text" placeholder="filename.format" name="filename"
+                                required></label>
+                    </p>
+                    <fieldset>
+                        <legend>Вид печати:</legend>
+                        <p class="form">
+                            <label><input type="radio" value="digital" name="printType">Цифровая</label>
+                        </p>
+                        <p class="form">
+                            <label><input type="radio" value="offset" name="printType">Офсетная</label>
+                        </p>
+                    </fieldset>
+                    <button class="form" type="submit">Отправить</button>
+                </form>
+            </div>
         </section>
     </main>
 </body>

@@ -2,9 +2,9 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
   box-sizing: border-box;
-  --background-color: #2D2D2D;
-  --font-color: #FFFFFF;
-  --font-color2: #00D5E4;
+  --background-color: #2d2d2d;
+  --font-color: #ffffff;
+  --font-color2: #00d5e4;
   --line-color: #575555;
 }
 *,
@@ -15,6 +15,14 @@ html {
 :focus {
   color: var(--font-main4);
   border: 10rem;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+a:hover {
+  transform: scale(1.1);
 }
 
 hr {
@@ -45,6 +53,36 @@ a {
 
 body {
   background-color: var(--background-color);
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 40%;
+  min-width: 32rem;
+}
+
+.form {
+  display: block;
+  text-align: center;
+}
+
+p.form {
+  color: var(--font-color2);
+  text-align: left;
+}
+
+legend {
+  color: var(--font-color);
+}
+
+p.form:focus {
+  transform: scale(1.1);
+}
+p.form:hover {
+  transform: scale(1.1);
 }
 
 .header-menu-1 {
@@ -88,7 +126,6 @@ ul.center {
   align-content: center;
   justify-content: space-between;
 }
-
 
 li.center {
   display: flex;
@@ -142,6 +179,24 @@ section {
   display: initial;
 }
 
+button.form {
+  width: 32rem;
+  background: var(--font-color);
+  border-radius: 1rem;
+  border: 0;
+  color: var(--font-color2);
+  text-transform: uppercase;
+  padding-left: 5.56rem;
+  padding-right: 5.56rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.31rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition-duration: 0.4s;
+  transition-property: all;
+}
+
 @media all {
   .header-menu-wide {
     display: none;
@@ -157,7 +212,7 @@ section {
   }
 }
 
-@media all and (min-width: 810px){
+@media all and (min-width: 810px) {
   .header-menu-wide {
     display: initial;
   }
@@ -166,7 +221,7 @@ section {
   }
 }
 
-@media all and (min-width: 1360px){
+@media all and (min-width: 1360px) {
   .img-big-container2 {
     display: initial;
   }
